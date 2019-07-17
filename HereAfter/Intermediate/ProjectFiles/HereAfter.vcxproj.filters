@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HereAfter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D5D8D418-E01C-4F61-9502-7D1C5AD224FF}</UniqueIdentifier>
+      <UniqueIdentifier>{5F519785-BB73-427D-99EA-BD30FB9FD648}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HereAfter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9464A883-61C9-4E54-8C53-0C84C7A94CFA}</UniqueIdentifier>
+      <UniqueIdentifier>{6E60DE93-9F90-4FDD-BA30-BE4E74C9CDAA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HereAfter">
-      <UniqueIdentifier>{69DC0998-D5C9-4EBC-9635-9EDD84A2AC4F}</UniqueIdentifier>
+      <UniqueIdentifier>{9FA4BB05-53E4-4E0E-A1AD-142C586EB6E7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HereAfter\HereAfter.Build.cs">
       <Filter>Source\HereAfter</Filter>
