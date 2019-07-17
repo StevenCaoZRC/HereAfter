@@ -1,0 +1,20 @@
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source\HereAfter\HereAfterGameMode.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterGameMode.generated.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source\HereAfter\HereAfterHUD.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterHUD.generated.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source\HereAfter\HereAfterCharacter.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterCharacter.generated.h

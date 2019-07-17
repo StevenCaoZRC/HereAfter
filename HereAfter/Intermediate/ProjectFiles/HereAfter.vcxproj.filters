@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HereAfter.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{D5D8D418-E01C-4F61-9502-7D1C5AD224FF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HereAfter.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HereAfterEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9464A883-61C9-4E54-8C53-0C84C7A94CFA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HereAfter">
+      <UniqueIdentifier>{69DC0998-D5C9-4EBC-9635-9EDD84A2AC4F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HereAfter\HereAfter.Build.cs">
+      <Filter>Source\HereAfter</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HereAfter\HereAfter.cpp">
+      <Filter>Source\HereAfter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HereAfter\HereAfter.h">
+      <Filter>Source\HereAfter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HereAfter\HereAfterCharacter.cpp">
+      <Filter>Source\HereAfter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HereAfter\HereAfterCharacter.h">
+      <Filter>Source\HereAfter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HereAfter\HereAfterGameMode.cpp">
+      <Filter>Source\HereAfter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HereAfter\HereAfterGameMode.h">
+      <Filter>Source\HereAfter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HereAfter\HereAfterHUD.cpp">
+      <Filter>Source\HereAfter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HereAfter\HereAfterHUD.h">
+      <Filter>Source\HereAfter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HereAfter\HereAfterProjectile.cpp">
+      <Filter>Source\HereAfter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HereAfter\HereAfterProjectile.h">
+      <Filter>Source\HereAfter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
