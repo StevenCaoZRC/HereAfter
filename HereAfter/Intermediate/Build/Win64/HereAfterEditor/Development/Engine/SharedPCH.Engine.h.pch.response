@@ -194,11 +194,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/I D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine
-/Yc"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.obj"
+/I D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine
+/Yc"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4
