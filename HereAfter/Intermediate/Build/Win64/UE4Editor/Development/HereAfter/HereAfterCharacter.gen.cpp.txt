@@ -1,9 +1,9 @@
-D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source\HereAfter/HereAfterCharacter.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterCharacter.generated.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter/HereAfterCharacter.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterCharacter.generated.h

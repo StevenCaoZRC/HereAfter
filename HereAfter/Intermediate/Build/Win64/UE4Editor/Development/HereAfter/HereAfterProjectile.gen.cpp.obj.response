@@ -28,9 +28,9 @@
 /wd4838
 /we4668
 /I .
-/I D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter
-/I D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source
-/I D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Source\HereAfter
+/I D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter
+/I D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source
+/I D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -438,12 +438,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterProjectile.gen.cpp"
-/FI"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h"
-/Fo"D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\HereAfterProjectile.gen.cpp.obj"
+/FI"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterProjectile.gen.cpp"
+/FI"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h"
+/Fo"D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\HereAfterProjectile.gen.cpp.obj"
 /TP
 /GR-
 /W4
