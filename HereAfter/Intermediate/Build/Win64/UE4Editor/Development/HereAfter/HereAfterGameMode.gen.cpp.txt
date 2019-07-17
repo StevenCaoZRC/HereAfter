@@ -1,9 +1,0 @@
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter/HereAfterGameMode.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterGameMode.generated.h

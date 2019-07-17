@@ -1,2 +1,0 @@
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\HereAfter.h
