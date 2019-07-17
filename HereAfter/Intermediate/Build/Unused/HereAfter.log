@@ -1,7 +1,0 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\steven.zha7447\Documents\HereAfter).
-  Creating makefile for HereAfterEditor (ini files are newer than makefile)
-  Parsing headers for HereAfterEditor
-    Running UnrealHeaderTool "D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for HereAfterEditor in 16.1955839 seconds
-  Target is up to date
-  Total execution time: 18.93 seconds

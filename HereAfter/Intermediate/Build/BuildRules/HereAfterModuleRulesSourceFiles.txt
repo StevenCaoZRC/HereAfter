@@ -1,3 +1,0 @@
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\HereAfter.Build.cs
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter.Target.cs
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfterEditor.Target.cs
