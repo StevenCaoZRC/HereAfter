@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Runtime/Engine/Classes/Engine/LevelStreaming.h"
 #include "HereAfterCharacter.generated.h"
 
 class UInputComponent;
@@ -60,6 +61,18 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fAcceleration = 0.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fMaxAcceleration = 10.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fMaxSpeed = 750.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool bSprinting = false;
+
 	/** Gun muzzle's offset from the characters location */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	FVector GunOffset;
@@ -80,11 +93,26 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
+	/** Name of the two Time Jump Worlds */
+	//Currently for testing
+	UPROPERTY(EditAnywhere)
+	FString PresentLevelName;
+	
+	UPROPERTY(EditAnywhere)
+	FString FutureLevelName;
+
+
+
 protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
 
+	/** Time Jumps */
+	void TimeJump();
+	ULevelStreaming* PresentLevel;
+	ULevelStreaming* FutureLevel;
+	bool hasTimeJump;
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();
 
@@ -105,6 +133,12 @@ protected:
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void LookUpAtRate(float Rate);
+
+	//Called via input to set sprinting.
+	void Sprinting();
+
+	//Called via input to set not sprinting.
+	void StopSprinting();
 
 	struct TouchData
 	{
