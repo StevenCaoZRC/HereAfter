@@ -60,6 +60,18 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fAcceleration = 0.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fMaxAcceleration = 10.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float fMaxSpeed = 750.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool bSprinting = false;
+
 	/** Gun muzzle's offset from the characters location */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	FVector GunOffset;
@@ -105,6 +117,12 @@ protected:
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void LookUpAtRate(float Rate);
+
+	//Called via input to set sprinting.
+	void Sprinting();
+
+	//Called via input to set not sprinting.
+	void StopSprinting();
 
 	struct TouchData
 	{

@@ -62,6 +62,23 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GunOffset;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSprinting_MetaData[];
+#endif
+		static void NewProp_bSprinting_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSprinting;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_fMaxSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_fMaxSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_fMaxAcceleration_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_fMaxAcceleration;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_fAcceleration_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_fAcceleration;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
@@ -161,6 +178,38 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GunOffset = { "GunOffset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, GunOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GunOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GunOffset_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting_SetBit(void* Obj)
+	{
+		((AHereAfterCharacter*)Obj)->bSprinting = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting = { "bSprinting", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AHereAfterCharacter), &Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxSpeed_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxSpeed = { "fMaxSpeed", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, fMaxSpeed), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxAcceleration_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxAcceleration = { "fMaxAcceleration", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, fMaxAcceleration), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxAcceleration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxAcceleration_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fAcceleration_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fAcceleration = { "fAcceleration", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, fAcceleration), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fAcceleration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fAcceleration_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "ModuleRelativePath", "HereAfterCharacter.h" },
@@ -257,6 +306,10 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FireSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GunOffset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bSprinting,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fMaxAcceleration,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_fAcceleration,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_L_MotionController,
@@ -295,7 +348,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHereAfterCharacter, 943710843);
+	IMPLEMENT_CLASS(AHereAfterCharacter, 3843800390);
 	template<> HEREAFTER_API UClass* StaticClass<AHereAfterCharacter>()
 	{
 		return AHereAfterCharacter::StaticClass();

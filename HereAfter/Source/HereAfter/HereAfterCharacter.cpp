@@ -8,6 +8,8 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
@@ -116,6 +118,10 @@ void AHereAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	//Bind sprint events
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AHereAfterCharacter::Sprinting);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AHereAfterCharacter::StopSprinting);
 
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AHereAfterCharacter::OnFire);
@@ -254,12 +260,59 @@ void AHereAfterCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FV
 //	}
 //}
 
+void AHereAfterCharacter::Sprinting()
+{
+	if (bSprinting == false)
+	{
+		bSprinting = true;
+	}
+}
+
+void AHereAfterCharacter::StopSprinting()
+{
+	//GetCharacterMovement()->MaxWalkSpeed = 250.0f;
+	bSprinting = false;
+	fAcceleration = 0.0f;
+}
+
 void AHereAfterCharacter::MoveForward(float Value)
 {
-	if (Value != 0.0f)
+	if (bSprinting && Value > 0.0f)
 	{
+		fAcceleration += 0.02;
+
+		if (fAcceleration > fMaxAcceleration)
+		{
+			fAcceleration = fMaxAcceleration;
+		}
+
+		GetCharacterMovement()->MaxWalkSpeed += fAcceleration;
+
+		if (GetCharacterMovement()->MaxWalkSpeed > fMaxSpeed)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = fMaxSpeed;
+		}
+
+		AddMovementInput(GetActorForwardVector(), Value);
+	}
+	else if (Value != 0.0f)
+	{
+		if (GetCharacterMovement()->MaxWalkSpeed > 250)
+		{
+			fAcceleration += 0.04;
+			GetCharacterMovement()->MaxWalkSpeed -= fAcceleration;
+		}
+
+		if (GetCharacterMovement()->MaxWalkSpeed < 250)
+		{
+			fAcceleration = 0.0f;
+			GetCharacterMovement()->MaxWalkSpeed = 250;
+
+		}
+
 		// add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
+		
 	}
 }
 
