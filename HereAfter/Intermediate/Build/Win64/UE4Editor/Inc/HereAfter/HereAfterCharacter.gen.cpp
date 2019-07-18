@@ -41,6 +41,14 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FutureLevelName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FutureLevelName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PresentLevelName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PresentLevelName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUsingMotionControllers_MetaData[];
 #endif
 		static void NewProp_bUsingMotionControllers_SetBit(void* Obj);
@@ -133,6 +141,21 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		{ "ModuleRelativePath", "HereAfterCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName = { "FutureLevelName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, FutureLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData[] = {
+		{ "Category", "HereAfterCharacter" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+		{ "ToolTip", "Name of the two Time Jump Worlds //Currently for testing" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName = { "PresentLevelName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, PresentLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bUsingMotionControllers_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -301,6 +324,8 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_Mesh1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHereAfterCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FireSound,
@@ -348,7 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHereAfterCharacter, 3843800390);
+	IMPLEMENT_CLASS(AHereAfterCharacter, 511439167);
 	template<> HEREAFTER_API UClass* StaticClass<AHereAfterCharacter>()
 	{
 		return AHereAfterCharacter::StaticClass();
