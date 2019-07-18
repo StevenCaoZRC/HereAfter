@@ -9,8 +9,8 @@ AHereAfterGameMode::AHereAfterGameMode()
 	: Super()
 {
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter"));
-	DefaultPawnClass = PlayerPawnClassFinder.Class;
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/Script/HereAfter/HereAfterCharacter"));
+	DefaultPawnClass = AHereAfterCharacter::StaticClass();
 
 	// use our custom HUD class
 	HUDClass = AHereAfterHUD::StaticClass();
