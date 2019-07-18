@@ -314,6 +314,11 @@ void AHereAfterCharacter::MoveForward(float Value)
 		AddMovementInput(GetActorForwardVector(), Value);
 		
 	}
+	if (Value == 0)
+	{
+		fAcceleration = 0.0f;
+		GetCharacterMovement()->MaxWalkSpeed = 250;
+	}
 }
 
 void AHereAfterCharacter::MoveRight(float Value)
