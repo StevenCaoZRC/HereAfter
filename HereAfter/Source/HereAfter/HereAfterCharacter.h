@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Runtime/Engine/Classes/Engine/LevelStreaming.h"
 #include "HereAfterCharacter.generated.h"
 
 class UInputComponent;
@@ -92,11 +93,26 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
+	/** Name of the two Time Jump Worlds */
+	//Currently for testing
+	UPROPERTY(EditAnywhere)
+	FString PresentLevelName;
+	
+	UPROPERTY(EditAnywhere)
+	FString FutureLevelName;
+
+
+
 protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
 
+	/** Time Jumps */
+	void TimeJump();
+	ULevelStreaming* PresentLevel;
+	ULevelStreaming* FutureLevel;
+	bool hasTimeJump;
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();
 
