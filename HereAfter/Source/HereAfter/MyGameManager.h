@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "QuestManager.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MyGameManager.generated.h"
@@ -15,9 +16,6 @@ public:
 	// Sets default values for this actor's properties
 	AMyGameManager();
 
-	void GetQuest();
-	void SetQuest();
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -28,6 +26,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	int iItemsCollected = 0;
+	QuestManager* QuestMan;
 
 };
