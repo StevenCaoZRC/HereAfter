@@ -8,8 +8,11 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
+
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -80,6 +83,7 @@ AHereAfterCharacter::AHereAfterCharacter()
 	VR_MuzzleLocation->SetRelativeLocation(FVector(0.000004, 53.999992, 10.000000));
 	VR_MuzzleLocation->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));		// Counteract the rotation of the VR gun model.
 
+
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -103,6 +107,28 @@ void AHereAfterCharacter::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	{
+		FLatentActionInfo info;
+		info.Linkage = 0;
+		info.UUID = 0;
+		UGameplayStatics::LoadStreamLevel(GetWorld(), *PresentLevelName, true, true, info);
+	}
+	{
+		FLatentActionInfo info;
+		info.Linkage = 1;
+		info.UUID = 1;
+		UGameplayStatics::LoadStreamLevel(GetWorld(), *FutureLevelName, false, true, info);
+	}
+	
+	PresentLevel = UGameplayStatics::GetStreamingLevel(GetWorld(), *PresentLevelName);
+	FutureLevel = UGameplayStatics::GetStreamingLevel(GetWorld(), *FutureLevelName);
+
+
+	
+	
+	
+	hasTimeJump = false;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -117,8 +143,16 @@ void AHereAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	//Bind sprint events
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AHereAfterCharacter::Sprinting);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AHereAfterCharacter::StopSprinting);
+
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AHereAfterCharacter::OnFire);
+
+	// Bind time jump event
+	PlayerInputComponent->BindAction("TimeJump", IE_Pressed, this, &AHereAfterCharacter::TimeJump);
+	
 
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
@@ -136,6 +170,8 @@ void AHereAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAxis("TurnRate", this, &AHereAfterCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AHereAfterCharacter::LookUpAtRate);
+
+	
 }
 
 void AHereAfterCharacter::OnFire()
@@ -183,6 +219,36 @@ void AHereAfterCharacter::OnFire()
 		{
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
+	}
+}
+
+void AHereAfterCharacter::TimeJump()
+{
+	
+	if (PresentLevelName != "" && FutureLevelName != "")
+	{
+		if (!hasTimeJump)
+		{
+			PresentLevel->SetShouldBeVisible(false);
+			FutureLevel->SetShouldBeVisible(true);
+		
+			
+			hasTimeJump = true;
+
+		}
+		else
+		{
+			FutureLevel->SetShouldBeVisible(false);
+			PresentLevel->SetShouldBeVisible(true);
+			
+			
+			
+			hasTimeJump = false;
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp,Warning, TEXT("Level Names are Empty"));
 	}
 }
 
@@ -254,12 +320,64 @@ void AHereAfterCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FV
 //	}
 //}
 
+void AHereAfterCharacter::Sprinting()
+{
+	if (bSprinting == false)
+	{
+		bSprinting = true;
+	}
+}
+
+void AHereAfterCharacter::StopSprinting()
+{
+	//GetCharacterMovement()->MaxWalkSpeed = 250.0f;
+	bSprinting = false;
+	fAcceleration = 0.0f;
+}
+
 void AHereAfterCharacter::MoveForward(float Value)
 {
-	if (Value != 0.0f)
+	if (bSprinting && Value > 0.0f)
 	{
+		fAcceleration += 0.02;
+
+		if (fAcceleration > fMaxAcceleration)
+		{
+			fAcceleration = fMaxAcceleration;
+		}
+
+		GetCharacterMovement()->MaxWalkSpeed += fAcceleration;
+
+		if (GetCharacterMovement()->MaxWalkSpeed > fMaxSpeed)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = fMaxSpeed;
+		}
+
+		AddMovementInput(GetActorForwardVector(), Value);
+	}
+	else if (Value != 0.0f)
+	{
+		if (GetCharacterMovement()->MaxWalkSpeed > 250)
+		{
+			fAcceleration += 0.04;
+			GetCharacterMovement()->MaxWalkSpeed -= fAcceleration;
+		}
+
+		if (GetCharacterMovement()->MaxWalkSpeed < 250)
+		{
+			fAcceleration = 0.0f;
+			GetCharacterMovement()->MaxWalkSpeed = 250;
+
+		}
+
 		// add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
+		
+	}
+	if (Value == 0)
+	{
+		fAcceleration = 0.0f;
+		GetCharacterMovement()->MaxWalkSpeed = 250;
 	}
 }
 
