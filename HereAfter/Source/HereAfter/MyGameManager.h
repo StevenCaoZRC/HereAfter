@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "QuestManager.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MyGameManager.generated.h"
@@ -26,6 +25,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	QuestManager* QuestMan;
 
 };

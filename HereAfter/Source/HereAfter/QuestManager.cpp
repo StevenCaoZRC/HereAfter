@@ -2,37 +2,52 @@
 
 
 #include "QuestManager.h"
-#include "Quest.h"
 
-QuestManager::QuestManager()
+// Sets default values
+AQuestManager::AQuestManager()
 {
+ 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
 }
 
-QuestManager::~QuestManager()
+// Called when the game starts or when spawned
+void AQuestManager::BeginPlay()
 {
+	Super::BeginPlay();
+	
 }
 
-std::vector<Quest*> QuestManager::GetQuests()
+// Called every frame
+void AQuestManager::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+TArray<AQuest*> AQuestManager::GetQuests()
 {
 	return Quests;
 }
 
 
-void QuestManager::AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable)
+void AQuestManager::AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable)
 {
-	Quest* Temp = new Quest(_Name, _description, _active, _completed, _repeatable);
-	Quests.push_back(Temp);
+	AQuest* Temp;
+	Quests.Add(Temp);
 }
 
 
-void QuestManager::SetCurrentQuest(int _newcurr)
+void AQuestManager::SetCurrentQuest(int _newcurr)
 {
 	iCurrentQuest = _newcurr;
 	CurrentQuest = Quests[iCurrentQuest];
 }
 
 
-Quest* QuestManager::GetCurrentQuest()
+AQuest* AQuestManager::GetCurrentQuest()
 {
 	return CurrentQuest;
 }
+
+

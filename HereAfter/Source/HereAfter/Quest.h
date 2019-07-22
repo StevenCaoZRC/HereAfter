@@ -3,29 +3,54 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include <string>
+#include "GameFramework/Actor.h"
+#include "Quest.generated.h"
 
-/**
- * 
- */
-class HEREAFTER_API Quest
+UCLASS()
+class HEREAFTER_API AQuest : public AActor
 {
-public:
-	Quest(FString _Name, FString _Description, bool _active, bool _completed, bool _repeatable);
-	FString GetName();
-	FString GetDescription();
-	bool GetActive();
-	bool GetCompleted();
-	bool GetRepeatable();
-	void SetActive(bool _active);
-	void SetCompleted(bool _completed);
-	void SetRepeatable(bool _repeatable);
-	~Quest();
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AQuest();
+	UFUNCTION()
+		void Init(FString _Name, FString _Description, bool _active, bool _completed, bool _repeatable);
+	UFUNCTION()
+		FString GetName();
+	UFUNCTION()
+		FString GetDescription();
+	UFUNCTION()
+		bool GetActive();
+	UFUNCTION()
+		bool GetCompleted();
+	UFUNCTION()
+		bool GetRepeatable();
+	UFUNCTION()
+		void SetActive(bool _active);
+	UFUNCTION()
+		void SetCompleted(bool _completed);
+	UFUNCTION()
+		void SetRepeatable(bool _repeatable);
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
 private:
-	FString sQuestName;
-	FString sQuestDescription;
-	bool bActive;
-	bool bCompleted;
-	bool bRepeatable;
+	UPROPERTY()
+		FString sQuestName;
+	UPROPERTY()
+		FString sQuestDescription;
+	UPROPERTY()
+		bool bActive;
+	UPROPERTY()
+		bool bCompleted;
+	UPROPERTY()
+		bool bRepeatable;
+
 };

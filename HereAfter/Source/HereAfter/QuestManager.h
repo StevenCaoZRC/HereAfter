@@ -4,24 +4,40 @@
 
 #include "CoreMinimal.h"
 #include "Quest.h"
-#include <vector>
+#include "GameFramework/Actor.h"
+#include "QuestManager.generated.h"
 
-/**
- * 
- */
-class HEREAFTER_API QuestManager
+UCLASS()
+class HEREAFTER_API AQuestManager : public AActor
 {
-public:
-	QuestManager();
-	~QuestManager();
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AQuestManager();
+	UFUNCTION()
+		TArray<AQuest*> GetQuests();
+	UFUNCTION()
+		void AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable);
+	UFUNCTION()
+		void SetCurrentQuest(int _newcurr);
+	UFUNCTION()
+		AQuest* GetCurrentQuest();
 
-	std::vector<Quest*> GetQuests();
-	void AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable);
-	void SetCurrentQuest(int _newcurr);
-	Quest* GetCurrentQuest();
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
 private:
-	Quest* CurrentQuest;
-	std::vector<Quest*> Quests;
-	int iCurrentQuest = 0;
+	UPROPERTY()
+		AQuest* CurrentQuest;
+	UPROPERTY()
+		TArray<AQuest*> Quests;
+	UPROPERTY()
+		int iCurrentQuest = 0;
+
 };

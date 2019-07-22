@@ -3,8 +3,29 @@
 
 #include "Quest.h"
 
+// Sets default values
+AQuest::AQuest()
+{
+ 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
 
-Quest::Quest(FString _Name, FString _Description, bool _active, bool _completed, bool _repeatable)
+}
+
+// Called when the game starts or when spawned
+void AQuest::BeginPlay()
+{
+	Super::BeginPlay();
+	
+}
+
+// Called every frame
+void AQuest::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+void AQuest::Init(FString _Name, FString _Description, bool _active, bool _completed, bool _repeatable)
 {
 	sQuestName = _Name;
 	sQuestDescription = _Description;
@@ -13,53 +34,52 @@ Quest::Quest(FString _Name, FString _Description, bool _active, bool _completed,
 	bRepeatable = _repeatable;
 }
 
-Quest::~Quest()
-{
-}
 
-FString Quest::GetName()
+
+FString AQuest::GetName()
 {
 	return sQuestName;
 }
 
 
-FString Quest::GetDescription()
+FString AQuest::GetDescription()
 {
 	return sQuestDescription;
 }
 
 
-bool Quest::GetActive()
+bool AQuest::GetActive()
 {
 	return bActive;
 }
 
 
-bool Quest::GetCompleted()
+bool AQuest::GetCompleted()
 {
 	return bCompleted;
 }
 
 
-bool Quest::GetRepeatable()
+bool AQuest::GetRepeatable()
 {
 	return bRepeatable;
 }
 
 
-void Quest::SetActive(bool _active)
+void AQuest::SetActive(bool _active)
 {
 	bActive = _active;
 }
 
 
-void Quest::SetCompleted(bool _completed)
+void AQuest::SetCompleted(bool _completed)
 {
 	bCompleted = _completed;
 }
 
 
-void Quest::SetRepeatable(bool _repeatable)
+void AQuest::SetRepeatable(bool _repeatable)
 {
 	bRepeatable = _repeatable;
 }
+
