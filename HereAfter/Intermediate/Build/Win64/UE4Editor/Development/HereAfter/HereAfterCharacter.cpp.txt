@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Users\pedro.kle7771\Desktop\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
 D:\Users\pedro.kle7771\Desktop\HereAfter\HereAfter\Source\HereAfter\HereAfterCharacter.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
@@ -60,3 +61,67 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Pub
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
+=======
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\Definitions.HereAfter.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\HereAfterCharacter.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime/Engine/Classes/Engine/LevelStreaming.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Public\LatentActions.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LevelStreaming.generated.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterCharacter.generated.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\HereAfterProjectile.h
+D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Inc\HereAfter\HereAfterProjectile.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/InputSettings.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerInput.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Public\GestureRecognizer.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Public\KeyState.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerInput.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InputSettings.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\IIdentifiableXRDevice.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayFunctionLibrary.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Public\AI/RVOAvoidanceInterface.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\MotionControllerComponent.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Engine\Public\SceneViewExtension.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
+D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
+>>>>>>> 0ebd5e196af2dd399a2ca8d08309d9514e04fe01
