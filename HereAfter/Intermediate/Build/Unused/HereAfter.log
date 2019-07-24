@@ -1,14 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\mark.wil7543\Documents\GitKraken\HereAfter).
+  Creating makefile for HereAfterEditor (ini files are newer than makefile)
   Parsing headers for HereAfterEditor
     Running UnrealHeaderTool "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for HereAfterEditor in 6.5188147 seconds
-  Using Visual Studio 2019 14.21.27702 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 8 processes...
-    [1/4] MyGameManager.cpp
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\MyGameManager.cpp(37): error C2065: 'LQuestMan': undeclared identifier
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\MyGameManager.cpp(37): error C2955: 'TIsArrayOrRefOfType': use of class template requires template argument list
-    D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Core\Public\Templates/IsArrayOrRefOfType.h(13): note: see declaration of 'TIsArrayOrRefOfType'
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\MyGameManager.cpp(37): error C2672: 'FMsg::Logf_Internal': no matching overloaded function found
-D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Source\HereAfter\MyGameManager.cpp(37): error C2780: 'void FMsg::Logf_Internal(const ANSICHAR *,int32,const FName &,ELogVerbosity::Type,const FmtType &,Types...)': expects 6 arguments - 4 provided
-    D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(55): note: see declaration of 'FMsg::Logf_Internal'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command "D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Build\BatchFiles\Build.bat HereAfterEditor Win64 Development -Project="D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.
+  Reflection code generated for HereAfterEditor in 6.6831115 seconds
+  Target is up to date
+  Total execution time: 8.77 seconds

@@ -39,7 +39,5 @@ private:
 		TArray<AQuest*> Quests;
 	UPROPERTY()
 		int iCurrentQuest = 0;
-	UPROPERTY()
-		TSubclassOf<AQuest> ActorToSpawn;
 
 };

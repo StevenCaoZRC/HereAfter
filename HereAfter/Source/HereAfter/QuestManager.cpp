@@ -35,11 +35,11 @@ TArray<AQuest*> AQuestManager::GetQuests()
 
 void AQuestManager::AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable)
 {
-	UWorld* WorldTemp = GetWorld();
-	AQuest* Temp = WorldTemp->SpawnActor<AQuest>(ActorToSpawn);
+	//UWorld* WorldTemp = UWorld::GetWorld();
+	AQuest* Temp = GetWorld()->SpawnActor<AQuest>(AQuest::StaticClass());
 	Temp->Init(_Name, _description, _active, _completed, _repeatable);
 
-	Quests.Add(Temp);
+	Quests.Push(Temp);
 }
 
 

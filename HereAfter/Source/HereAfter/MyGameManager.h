@@ -27,8 +27,6 @@ public:
 
 private:
 	UPROPERTY()
-		TSubclassOf<AQuestManager> QuestToSpawn;
-	UPROPERTY()
 		AQuestManager* QuestMan;
 
 };
