@@ -35,7 +35,6 @@ TArray<AQuest*> AQuestManager::GetQuests()
 
 void AQuestManager::AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable)
 {
-	//UWorld* WorldTemp = UWorld::GetWorld();
 	AQuest* Temp = GetWorld()->SpawnActor<AQuest>(AQuest::StaticClass());
 	Temp->Init(_Name, _description, _active, _completed, _repeatable);
 
@@ -45,8 +44,13 @@ void AQuestManager::AddQuest(FString _Name, FString _description, bool _active, 
 
 void AQuestManager::SetCurrentQuest(int _newcurr)
 {
+	if (CurrentQuest != NULL)
+	{
+		CurrentQuest->SetActive(false);
+	}
 	iCurrentQuest = _newcurr;
 	CurrentQuest = Quests[iCurrentQuest];
+	CurrentQuest->SetActive(true);
 }
 
 
@@ -55,4 +59,18 @@ AQuest* AQuestManager::GetCurrentQuest()
 	return CurrentQuest;
 }
 
+void AQuestManager::IncrementCurrentQuest()
+{
+	iCurrentQuest++;
+	SetCurrentQuest(iCurrentQuest);
+}
+
+void AQuestManager::CompleteCurrentQuest()
+{
+	if (CurrentQuest->GetCompleted() != true)
+	{
+		CurrentQuest->SetCompleted(true);
+	}
+	IncrementCurrentQuest();
+}
 

@@ -23,6 +23,10 @@ public:
 		void SetCurrentQuest(int _newcurr);
 	UFUNCTION()
 		AQuest* GetCurrentQuest();
+	UFUNCTION()
+		void IncrementCurrentQuest();
+	UFUNCTION()
+		void CompleteCurrentQuest();
 
 protected:
 	// Called when the game starts or when spawned
