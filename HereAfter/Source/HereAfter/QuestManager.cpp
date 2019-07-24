@@ -2,6 +2,8 @@
 
 
 #include "QuestManager.h"
+#include "Quest.h"
+#include "Engine/World.h"
 
 // Sets default values
 AQuestManager::AQuestManager()
@@ -33,7 +35,10 @@ TArray<AQuest*> AQuestManager::GetQuests()
 
 void AQuestManager::AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable)
 {
-	AQuest* Temp;
+	UWorld* WorldTemp = GetWorld();
+	AQuest* Temp = WorldTemp->SpawnActor<AQuest>(ActorToSpawn);
+	Temp->Init(_Name, _description, _active, _completed, _repeatable);
+
 	Quests.Add(Temp);
 }
 
