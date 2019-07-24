@@ -32,8 +32,8 @@ void AMyGameManager::BeginPlay()
 	
 	for (int i = 0; i < QuestMan->GetQuests().Num(); i++)
 	{
-		GEngine->AddOnScreenDebugMessage(1, 0.0f, FColor::Blue, QuestMan->GetQuests()[i]->GetName());
-		GEngine->AddOnScreenDebugMessage(1, 0.0f, FColor::Blue, QuestMan->GetQuests()[i]->GetDescription());
+		UE_LOG(LogTemp, Log, TEXT("EAT MY SHINY METAL ASS %s"), *FString(QuestMan->GetQuests()[i]->GetName()));
+		UE_LOG(LogTemp, Log, TEXT("EAT MY SHINY METAL ASS %s"), *FString(QuestMan->GetQuests()[i]->GetDescription()));
 	}
 	
 }
