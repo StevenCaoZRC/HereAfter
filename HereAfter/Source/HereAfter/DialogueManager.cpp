@@ -2,6 +2,7 @@
 
 
 #include "DialogueManager.h"
+#include "Engine/Engine.h"
 
 // Sets default values
 ADialogueManager::ADialogueManager()
@@ -33,12 +34,20 @@ TArray<ADialogue*> ADialogueManager::GetDialogues()
 
 void ADialogueManager::AddDialogue(FString _Dialogue)
 {
+	ADialogue* Temp = GetWorld()->SpawnActor<ADialogue>(ADialogue::StaticClass());
+	Temp->Init(_Dialogue);
 
+	Dialogues.Push(Temp);
 }
 
 void ADialogueManager::SetCurrentDialogue(int _newcurr)
 {
+	if (CurrentDialogue != NULL)
+	{
 
+	}
+	iCurrentDialogue = _newcurr;
+	CurrentDialogue = Dialogues[iCurrentDialogue];
 }
 
 ADialogue* ADialogueManager::GetCurrentDialogue()
@@ -48,7 +57,8 @@ ADialogue* ADialogueManager::GetCurrentDialogue()
 
 void ADialogueManager::IncrementCurrentDialogue()
 {
-
+	iCurrentDialogue++;
+	SetCurrentDialogue(iCurrentDialogue);
 }
 
 void ADialogueManager::CompleteCurrentDialogue()

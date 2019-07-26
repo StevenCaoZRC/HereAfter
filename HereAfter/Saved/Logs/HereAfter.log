@@ -685,3 +685,16 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.07.25-04.09.27:301][210]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
 [2019.07.25-04.09.27:345][210]LogContentBrowser: Native class hierarchy populated in 0.0162 seconds. Added 2742 classes and 663 folders.
 [2019.07.25-04.09.27:350][210]Display: HotReload took  0.6s.
+[2019.07.25-04.11.14:288][529]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{70bfc0a1-d0f1-4bda-969b-7e116c8650e0} was removed. Shutting down audio device.
+[2019.07.25-04.11.14:289][529]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.26-01.18.09:801][131]LogInit: XAudio2 using 'Speakers (2- USB Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.26-01.18.10:137][132]LogInit: XAudio2 using 'Speakers (2- USB Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.26-01.58.03:162][515]LogHotReload: New module detected: UE4Editor-HereAfter-0005.dll
+[2019.07.26-01.58.04:530][520]LogHotReload: Starting Hot-Reload from IDE
+[2019.07.26-01.58.04:569][520]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.07.26-01.58.04:637][520]LogHotReload: Re-instancing HereAfterCharacter after hot-reload.
+[2019.07.26-01.58.04:730][520]LogContentBrowser: Native class hierarchy updated for 'HereAfter' in 0.0009 seconds. Added 9 classes and 2 folders.
+[2019.07.26-01.58.04:734][520]Display: HotReload successful (25 functions remapped  0 scriptstructs remapped)
+[2019.07.26-01.58.04:788][520]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2019.07.26-01.58.04:804][520]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2742 classes and 663 folders.
+[2019.07.26-01.58.04:807][520]Display: HotReload took  0.3s.
