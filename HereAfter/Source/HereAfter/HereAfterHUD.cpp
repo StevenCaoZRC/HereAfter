@@ -1,6 +1,7 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "HereAfterHUD.h"
+#include "Engine/World.h"
 #include "Engine/Canvas.h"
 #include "Engine/Texture2D.h"
 #include "TextureResource.h"
@@ -12,8 +13,37 @@ AHereAfterHUD::AHereAfterHUD()
 	// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
 	CrosshairTex = CrosshairTexObj.Object;
+	static ConstructorHelpers::FObjectFinder<UFont> FontObject(TEXT("Font'/Game/MyProject/Roboto18.Roboto18'"));
+	uFont = FontObject.Object;
 }
 
+void AHereAfterHUD::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void AHereAfterHUD::DisplayDialogue(int _dID)
+{
+	if (bDisplayDialogue == true)
+	{
+		const FVector2D CenterBottom(Canvas->ClipX * 0.5f, Canvas->ClipY - 10.0f);
+
+		//DrawText(TEXT("s%", *FString(DialogueMan->GetDialogues()[_dID]->GetDialogue())), FLinearColor::White, CenterBottom.X, CenterBottom.Y, uFont, 1.0f);
+	}
+
+	fRemainingTime = fRemainingTime - GetWorld()->GetTimeSeconds();
+
+	if (fRemainingTime <= 0 && bDisplayDialogue == true)
+	{
+		fRemainingTime = 5.0f;
+		bDisplayDialogue = false;
+	}
+}
+
+void AHereAfterHUD::Init()
+{
+
+}
 
 void AHereAfterHUD::DrawHUD()
 {
