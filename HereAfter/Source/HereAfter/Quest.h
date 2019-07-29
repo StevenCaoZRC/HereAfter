@@ -16,22 +16,23 @@ public:
 	AQuest();
 	UFUNCTION()
 		void Init(FString _Name, FString _Description, bool _active, bool _completed, bool _repeatable);
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "Quest")
 		FString GetName();
 	UFUNCTION()
 		FString GetDescription();
 	UFUNCTION()
 		bool GetActive();
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "Quest")
 		bool GetCompleted();
 	UFUNCTION()
 		bool GetRepeatable();
 	UFUNCTION()
 		void SetActive(bool _active);
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "Quest")
 		void SetCompleted(bool _completed);
 	UFUNCTION()
 		void SetRepeatable(bool _repeatable);
+
 
 protected:
 	// Called when the game starts or when spawned

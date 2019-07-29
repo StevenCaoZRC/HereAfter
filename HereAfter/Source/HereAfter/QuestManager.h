@@ -19,13 +19,13 @@ public:
 		TArray<AQuest*> GetQuests();
 	UFUNCTION()
 		void AddQuest(FString _Name, FString _description, bool _active, bool _completed, bool _repeatable);
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "QuestManager")
 		void SetCurrentQuest(int _newcurr);
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "QuestManager")
 		AQuest* GetCurrentQuest();
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "QuestManager")
 		void IncrementCurrentQuest();
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "QuestManager")
 		void CompleteCurrentQuest();
 
 protected:
