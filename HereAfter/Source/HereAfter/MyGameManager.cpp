@@ -23,11 +23,19 @@ void AMyGameManager::BeginPlay()
 	Super::BeginPlay();
 
 	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
-	QuestMan->AddQuest("Get Water", "Traverse the woods to find the water", true, false, false);
+	
+
+	
+	QuestMan->AddQuest("WaterQuest", "Collect a vial of well water", false, false, false);
+	QuestMan->AddQuest("PlantQuest", "Retrieve a Mandragora", false, false, false);
+	QuestMan->AddQuest("DeerQuest", "Find doe", false, false, false);
+	QuestMan->AddQuest("BoxQuest", "Unearth casket", false, false, false);
+	//QuestMan->AddQuest("Get Shyamalaned", "Traverse the woods to find the twist", false, false, false); 
+	/*QuestMan->AddQuest("Get Water", "Traverse the woods to find the water", true, false, false);
 	QuestMan->AddQuest("Get Dirt", "Traverse the woods to find the dirt", false, false, false);
 	QuestMan->AddQuest("Get Schwifty", "Traverse the woods to find Mr Bulldops", false, false, false);
 	QuestMan->AddQuest("Get Box", "Traverse the woods to find the box", false, false, false);
-	QuestMan->AddQuest("Get Shyamalaned", "Traverse the woods to find the twist", false, false, false);
+	QuestMan->AddQuest("Get Shyamalaned", "Traverse the woods to find the twist", false, false, false);*/
 	QuestMan->SetCurrentQuest(0);
 
 	

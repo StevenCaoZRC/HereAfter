@@ -61,8 +61,12 @@ AQuest* AQuestManager::GetCurrentQuest()
 
 void AQuestManager::IncrementCurrentQuest()
 {
-	iCurrentQuest++;
-	SetCurrentQuest(iCurrentQuest);
+
+	if (Quests[iCurrentQuest] != NULL)
+	{
+		iCurrentQuest++;
+		SetCurrentQuest(iCurrentQuest);
+	}
 }
 
 void AQuestManager::CompleteCurrentQuest()
