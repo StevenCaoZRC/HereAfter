@@ -21,14 +21,14 @@ public:
 	virtual void BeginPlay() override;
 	void DisplayDialogue(int _dID, FVector2D _pos);
 	void Init();
+	void ResetDisDialogue();
 
 private:
 	/** Crosshair asset pointer */
 	class UTexture2D* CrosshairTex;
 	ADialogueManager* DialogueMan;
 	bool bDisplayDialogue = false;
-	int iDialogueID;
-	ADialogue* CurrentDialogue;
+	int iDialogueID = 0;
 	float fRemainingTime = 5.0f;
 	UFont* uFont;
 	float fTextW;

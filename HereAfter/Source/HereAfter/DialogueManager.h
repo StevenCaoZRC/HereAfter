@@ -18,7 +18,7 @@ public:
 	UFUNCTION()
 		TArray<ADialogue*> GetDialogues();
 	UFUNCTION()
-		void AddDialogue(FString _Dialogue);
+		void AddDialogue(FString _Dialogue, bool _bContinue);
 	UFUNCTION()
 		void SetCurrentDialogue(int _newcurr);
 	UFUNCTION()
