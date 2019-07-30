@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\mark.wil7543\Documents\GitKraken\HereAfter).
   Creating makefile for HereAfterEditor (ini files are newer than makefile)
   Parsing headers for HereAfterEditor
@@ -5,3 +6,8 @@
   Reflection code generated for HereAfterEditor in 6.8158081 seconds
   Target is up to date
   Total execution time: 8.96 seconds
+=======
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\steven.zha7447\Documents\HereAfter).
+  Creating makefile for HereAfterEditor (ini files are newer than makefile)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): warning MSB5021: Terminating the task executable "cmd" and its child processes because the build was canceled.
+>>>>>>> develop

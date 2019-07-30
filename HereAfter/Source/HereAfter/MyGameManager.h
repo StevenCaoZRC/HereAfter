@@ -15,7 +15,8 @@ class HEREAFTER_API AMyGameManager : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AMyGameManager();
-
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category = "QuestManager")
+		AQuestManager* QuestMan;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -26,7 +27,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	UPROPERTY()
-		AQuestManager* QuestMan;
+	
 
 };

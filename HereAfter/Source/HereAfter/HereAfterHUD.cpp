@@ -11,7 +11,7 @@
 AHereAfterHUD::AHereAfterHUD()
 {
 	// Set the crosshair texture
-	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
+	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/T_Dot"));
 	CrosshairTex = CrosshairTexObj.Object;
 	static ConstructorHelpers::FObjectFinder<UFont> FontObject(TEXT("/Game/FirstPerson/Fonts/HTOWERT_Font"));
 	uFont = FontObject.Object;
@@ -108,9 +108,15 @@ void AHereAfterHUD::DrawHUD()
 	ResetDisDialogue();
 
 	// draw the crosshair
+<<<<<<< HEAD
 	
 	//FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	//TileItem.BlendMode = SE_BLEND_Translucent;
 	//Canvas->DrawItem( TileItem );
 	
+=======
+	//FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
+	//TileItem.BlendMode = SE_BLEND_Translucent;
+	//Canvas->DrawItem( TileItem );
+>>>>>>> develop
 }
