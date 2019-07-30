@@ -1,34 +1,3 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\steven.zha7447\Documents\HereAfter).
-  Creating makefile for HereAfterEditor (.uproject file is newer)
-  Parsing headers for HereAfterEditor
-    Running UnrealHeaderTool "D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\DebugGame\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for HereAfterEditor in 14.8656268 seconds
-  Using Visual Studio 2019 14.21.27702 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 23 actions with 8 processes...
-    [1/23] Default.rc2
-    [2/23] SharedPCH.Engine.NonOptimized.cpp
-    [3/23] HereAfter.cpp
-    [4/23] Interactable.cpp
-    [5/23] Quest.cpp
-    [6/23] HereAfterProjectile.cpp
-    [7/23] MyGameManager.cpp
-    [8/23] HereAfter.init.gen.cpp
-    [9/23] HereAfterGameMode.cpp
-    [10/23] HereAfterHUD.cpp
-    [11/23] HereAfterGameMode.gen.cpp
-    [12/23] HereAfterHUD.gen.cpp
-    [13/23] Interactable.gen.cpp
-    [14/23] Quest.gen.cpp
-    [15/23] HereAfterProjectile.gen.cpp
-    [16/23] MyGameManager.gen.cpp
-    [17/23] QuestManager.gen.cpp
-    [18/23] HereAfterCharacter.gen.cpp
-    [19/23] HereAfterCharacter.cpp
-    [20/23] QuestManager.cpp
-    [21/23] UE4Editor-HereAfter-Win64-DebugGame.lib
-       Creating library D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\DebugGame\HereAfter\UE4Editor-HereAfter-Win64-DebugGame.lib and object D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\DebugGame\HereAfter\UE4Editor-HereAfter-Win64-DebugGame.exp
-    [22/23] UE4Editor-HereAfter-Win64-DebugGame.dll
-       Creating library D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\DebugGame\HereAfter\UE4Editor-HereAfter-Win64-DebugGame.suppressed.lib and object D:\Users\steven.zha7447\Documents\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\DebugGame\HereAfter\UE4Editor-HereAfter-Win64-DebugGame.suppressed.exp
-    [23/23] HereAfterEditor-Win64-DebugGame.target
-  Total time in Parallel executor: 30.65 seconds
-  Total execution time: 48.45 seconds
+  Creating makefile for HereAfterEditor (ini files are newer than makefile)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): warning MSB5021: Terminating the task executable "cmd" and its child processes because the build was canceled.

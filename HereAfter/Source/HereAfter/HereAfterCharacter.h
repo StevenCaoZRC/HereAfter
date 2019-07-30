@@ -95,14 +95,17 @@ public:
 
 	/** Name of the two Time Jump Worlds */
 	//Currently for testing
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, Category="LevelStreaming")
 	FString PresentLevelName;
 	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, Category = "LevelStreaming")
 	FString FutureLevelName;
 
+	UPROPERTY(BlueprintReadOnly, Category = "LevelStreaming")
+		ULevelStreaming* PresentLevel;
 
-
+	UPROPERTY( BlueprintReadOnly, Category = "LevelStreaming")
+		ULevelStreaming* FutureLevel;
 protected:
 	
 	/** Fires a projectile. */
@@ -110,8 +113,7 @@ protected:
 
 	/** Time Jumps */
 	void TimeJump();
-	ULevelStreaming* PresentLevel;
-	ULevelStreaming* FutureLevel;
+
 	bool hasTimeJump;
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();

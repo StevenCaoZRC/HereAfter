@@ -225,7 +225,7 @@ void AHereAfterCharacter::OnFire()
 void AHereAfterCharacter::TimeJump()
 {
 	
-	if (PresentLevelName != "" && FutureLevelName != "")
+	/*if (PresentLevelName != "" && FutureLevelName != "")
 	{
 		if (!hasTimeJump)
 		{
@@ -249,7 +249,7 @@ void AHereAfterCharacter::TimeJump()
 	else
 	{
 		UE_LOG(LogTemp,Warning, TEXT("Level Names are Empty"));
-	}
+	}*/
 }
 
 void AHereAfterCharacter::OnResetVR()

@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 	HEREAFTER_API UClass* Z_Construct_UClass_AHereAfterCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_HereAfter();
+	ENGINE_API UClass* Z_Construct_UClass_ULevelStreaming_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -36,6 +37,14 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FutureLevel_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FutureLevel;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PresentLevel_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PresentLevel;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FutureLevelName_MetaData[];
 #endif
@@ -106,20 +115,34 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData[] = {
-		{ "Category", "HereAfterCharacter" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel_MetaData[] = {
+		{ "Category", "LevelStreaming" },
 		{ "ModuleRelativePath", "HereAfterCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName = { "FutureLevelName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, FutureLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel = { "FutureLevel", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, FutureLevel), Z_Construct_UClass_ULevelStreaming_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel_MetaData[] = {
+		{ "Category", "LevelStreaming" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel = { "PresentLevel", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, PresentLevel), Z_Construct_UClass_ULevelStreaming_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData[] = {
+		{ "Category", "LevelStreaming" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName = { "FutureLevelName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, FutureLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData[] = {
-		{ "Category", "HereAfterCharacter" },
+		{ "Category", "LevelStreaming" },
 		{ "ModuleRelativePath", "HereAfterCharacter.h" },
 		{ "ToolTip", "Name of the two Time Jump Worlds //Currently for testing" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName = { "PresentLevelName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, PresentLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName = { "PresentLevelName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, PresentLevelName), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bUsingMotionControllers_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -213,6 +236,8 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHereAfterCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevelName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_bUsingMotionControllers,
@@ -254,7 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHereAfterCharacter, 2547673178);
+	IMPLEMENT_CLASS(AHereAfterCharacter, 1738460546);
 	template<> HEREAFTER_API UClass* StaticClass<AHereAfterCharacter>()
 	{
 		return AHereAfterCharacter::StaticClass();
