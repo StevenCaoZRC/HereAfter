@@ -19,18 +19,19 @@ public:
 	/** Primary draw call for the HUD */
 	virtual void DrawHUD() override;
 	virtual void BeginPlay() override;
-	void DisplayDialogue(int _dID);
+	void DisplayDialogue(int _dID, FVector2D _pos);
 	void Init();
 
 private:
 	/** Crosshair asset pointer */
 	class UTexture2D* CrosshairTex;
 	ADialogueManager* DialogueMan;
-	bool bDisplayDialogue;
+	bool bDisplayDialogue = false;
 	int iDialogueID;
 	ADialogue* CurrentDialogue;
 	float fRemainingTime = 5.0f;
 	UFont* uFont;
-
+	float fTextW;
+	float fTextH;
 };
 
