@@ -21,9 +21,6 @@ void AHereAfterHUD::BeginPlay()
 {
 	Super::BeginPlay();
 	Init();
-	
-
-	bDisplayDialogue = true;
 }
 
 void AHereAfterHUD::DisplayDialogue(int _dID, FVector2D _pos)
@@ -32,6 +29,7 @@ void AHereAfterHUD::DisplayDialogue(int _dID, FVector2D _pos)
 	{
 		GetTextSize((TEXT("%s"), *FString(DialogueMan->GetDialogues()[_dID]->GetDialogue())), fTextW, fTextH, uFont, 1.0f);
 		DrawText((TEXT("%s"), *FString(DialogueMan->GetDialogues()[_dID]->GetDialogue())), FLinearColor::White, _pos.X - (fTextW/2), _pos.Y, uFont, 1.0f, false);
+		fRemainingTime = fRemainingTime - GetWorld()->DeltaTimeSeconds;
 	}
 
 	if (fRemainingTime <= 0 && bDisplayDialogue == true)
@@ -53,16 +51,14 @@ void AHereAfterHUD::DisplayDialogue(int _dID, FVector2D _pos)
 		}
 		else
 		{
-			iDialogueID = 0;
+			iDialogueID = 89;
 		}
-		
 	}
 }
 
 void AHereAfterHUD::ResetDisDialogue()
 {
-	fRemainingTime = fRemainingTime - GetWorld()->DeltaTimeSeconds;
-
+	
 	if (fRemainingTime <= 0 && bDisplayDialogue == false)
 	{
 		fRemainingTime = 5.0f;
@@ -73,7 +69,11 @@ void AHereAfterHUD::ResetDisDialogue()
 
 void AHereAfterHUD::SetDialogue(int _dID)
 {
-
+	if (iDialogueID <= DialogueMan->GetDialogues().Num() - 1)
+	{
+		iDialogueID = _dID;
+		bDisplayDialogue = true;
+	}
 }
 
 void AHereAfterHUD::Init()
@@ -83,20 +83,22 @@ void AHereAfterHUD::Init()
 	DialogueMan = GetWorld()->SpawnActor<ADialogueManager>(ADialogueManager::StaticClass());
 	//Start of the game
 	DialogueMan->AddDialogue("Hello Traveller. What luck that you should appear here.", true); //0
-	DialogueMan->AddDialogue("Please, come closer. I wish to show you something.", false); //1
+	DialogueMan->AddDialogue("Please, come closer. I wish to show you something.", true); //1
 	DialogueMan->AddDialogue("I am the guardian of this forest. It has been my home for many years", true); //2
-	DialogueMan->AddDialogue("My roots run deep here, caring for all creatures that inhabit this place.", false); //3
+	DialogueMan->AddDialogue("My roots run deep here, caring for all creatures that inhabit this place.", true); //3
 	DialogueMan->AddDialogue("But we are under threat. This is a vision of the future - our future.", true); //4
 	DialogueMan->AddDialogue("This beautiful place will become nothing but ash if we do not stop it.", true); //5
-	DialogueMan->AddDialogue("All the beauty, all the life will be gone.", false); //6
-	DialogueMan->AddDialogue("I need your help. Together we can prevent this future from unfolding.", false); //7
+	DialogueMan->AddDialogue("All the beauty, all the life will be gone.", true); //6
+	DialogueMan->AddDialogue("I need your help. Together we can prevent this future from unfolding.", true); //7
 	DialogueMan->AddDialogue("Four items lie in this forest: some here, and some in the future", true); //8
 	DialogueMan->AddDialogue("I can grant you the ability to step between there worlds...", true); //9
 	DialogueMan->AddDialogue("... but you must promise me that you will endeavour to save us.", false); //10
+
 	DialogueMan->AddDialogue("Use the power of stepping between now and the future to find these items.", true); //11
 	DialogueMan->AddDialogue("If you are stuck, it will help your journey", true); //12
 	DialogueMan->AddDialogue("Time has a way of dissolving even the most immovable of obstacles", true); //13
 	DialogueMan->AddDialogue("While sometimes creating ones of its own.", false); //14
+
 	DialogueMan->AddDialogue("Our fate is in your hands. Only you can stop this.", true); //15
 	DialogueMan->AddDialogue("Thank you, Traveller.", false); //16
 	//Well Water
@@ -187,6 +189,9 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("NO!", true);//87
 	DialogueMan->AddDialogue("The future is mine!", false);//88
 
+	//The empty string, do DO do do
+	DialogueMan->AddDialogue("", false);//89
+
 }
 
 void AHereAfterHUD::DrawHUD()
@@ -204,7 +209,6 @@ void AHereAfterHUD::DrawHUD()
 										   (Center.Y + 20.0f));
 
 	DisplayDialogue(iDialogueID, CenterBottom);
-	ResetDisDialogue();
 
 	// draw the crosshair
 

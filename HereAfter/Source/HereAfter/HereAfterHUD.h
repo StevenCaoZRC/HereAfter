@@ -22,7 +22,7 @@ public:
 	void DisplayDialogue(int _dID, FVector2D _pos);
 	void Init();
 	void ResetDisDialogue();
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "Dialogue")
 	void SetDialogue(int _dID);
 
 private:

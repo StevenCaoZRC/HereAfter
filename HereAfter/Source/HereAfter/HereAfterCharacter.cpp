@@ -92,6 +92,7 @@ void AHereAfterCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+	
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
@@ -107,6 +108,8 @@ void AHereAfterCharacter::BeginPlay()
 	//	VR_Gun->SetHiddenInGame(true, true);
 	//	Mesh1P->SetHiddenInGame(false, true);
 	//}
+
+	GetCharacterMovement()->MaxWalkSpeed = 500;
 
 	{
 		FLatentActionInfo info;
@@ -140,8 +143,8 @@ void AHereAfterCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	check(PlayerInputComponent);
 
 	// Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	//PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	//Bind sprint events
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AHereAfterCharacter::Sprinting);
@@ -324,7 +327,7 @@ void AHereAfterCharacter::Sprinting()
 {
 	if (bSprinting == false)
 	{
-		bSprinting = true;
+		//bSprinting = true;
 	}
 }
 
@@ -357,6 +360,7 @@ void AHereAfterCharacter::MoveForward(float Value)
 	}
 	else if (Value != 0.0f)
 	{
+		/*
 		if (GetCharacterMovement()->MaxWalkSpeed > 250)
 		{
 			fAcceleration += 0.04;
@@ -369,16 +373,19 @@ void AHereAfterCharacter::MoveForward(float Value)
 			GetCharacterMovement()->MaxWalkSpeed = 250;
 
 		}
+		*/
 
 		// add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
 		
 	}
+	/*
 	if (Value == 0)
 	{
 		fAcceleration = 0.0f;
 		GetCharacterMovement()->MaxWalkSpeed = 250;
 	}
+	*/
 }
 
 void AHereAfterCharacter::MoveRight(float Value)
