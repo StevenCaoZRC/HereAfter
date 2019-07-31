@@ -990,3 +990,178 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.07.31-22.12.40:836][321]Cmd: SELECT NONE
 [2019.07.31-22.12.42:426][360]LogSlate: FSceneViewport::OnFocusLost() reason 2
 [2019.07.31-22.13.10:296][  6]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.07.31-23.41.56:766][914]LogHotReload: New module detected: UE4Editor-HereAfter-0011.dll
+[2019.07.31-23.41.58:447][920]LogHotReload: Starting Hot-Reload from IDE
+[2019.07.31-23.41.58:649][920]LogUObjectHash: Compacting FUObjectHashTables data took   9.49ms
+[2019.07.31-23.41.58:698][920]LogContentBrowser: Native class hierarchy updated for 'HereAfter' in 0.0029 seconds. Added 10 classes and 2 folders.
+[2019.07.31-23.41.58:703][920]Display: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2019.07.31-23.41.58:817][920]LogUObjectHash: Compacting FUObjectHashTables data took   3.96ms
+[2019.07.31-23.41.58:871][920]LogContentBrowser: Native class hierarchy populated in 0.0306 seconds. Added 2757 classes and 669 folders.
+[2019.07.31-23.41.58:875][920]Display: HotReload took  0.4s.
+[2019.07.31-23.42.08:620][  6]LogTemp: Repeating last play command: Selected Viewport
+[2019.07.31-23.42.08:646][  6]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.08:646][  6]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.08:647][  6]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.08:647][  6]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.07.31-23.42.08:647][  6]PIE: New page: PIE session: Presistentlevel (1/08/2019 11:42:08 pm)
+[2019.07.31-23.42.08:648][  6]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Presistentlevel
+[2019.07.31-23.42.09:281][  6]LogPlayLevel: PIE: StaticDuplicateObject took: (0.633509s)
+[2019.07.31-23.42.09:284][  6]LogAIModule: Creating AISystem for world Presistentlevel
+[2019.07.31-23.42.09:285][  6]LogPlayLevel: PIE: World Init took: (0.003445s)
+[2019.07.31-23.42.09:285][  6]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Presistentlevel.Presistentlevel to /Game/UEDPIE_0_Presistentlevel.Presistentlevel (0.638227s)
+[2019.07.31-23.42.09:316][  6]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2019.07.31-23.42.09:348][  6]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.31-23.42.09:370][  6]LogInit: FAudioDevice initialized.
+[2019.07.31-23.42.09:409][  6]LogLoad: Game class is 'BP_HereAfterGameMode_C'
+[2019.07.31-23.42.09:526][  6]LogWorld: Bringing World /Game/UEDPIE_0_Presistentlevel.Presistentlevel up for play (max tick rate 0) at 2019.08.01-11.42.09
+[2019.07.31-23.42.09:531][  6]LogWorld: Bringing up level for play took: 0.119710
+[2019.07.31-23.42.09:548][  6]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_0 1 1 1
+[2019.07.31-23.42.09:548][  6]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_1 1 0 1
+[2019.07.31-23.42.09:549][  6]PIE: Play in editor start time for /Game/UEDPIE_0_Presistentlevel -0.002
+[2019.07.31-23.42.09:549][  6]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.09:550][  6]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.09:550][  6]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.22:446][558]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.22:447][558]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.22:447][558]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.22:448][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.42.22:512][558]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.07.31-23.42.22:513][558]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.22:513][558]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.22:514][558]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.22:561][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.42.22:585][558]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2019.07.31-23.42.22:646][559]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2019.07.31-23.42.22:671][559]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2019.07.31-23.42.23:875][612]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.07.31-23.42.23:964][616]LogTemp: Repeating last play command: Selected Viewport
+[2019.07.31-23.42.23:987][616]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.23:987][616]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.23:988][616]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.23:988][616]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.07.31-23.42.23:988][616]PIE: New page: PIE session: Presistentlevel (1/08/2019 11:42:23 pm)
+[2019.07.31-23.42.23:988][616]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Presistentlevel
+[2019.07.31-23.42.24:390][616]LogPlayLevel: PIE: StaticDuplicateObject took: (0.401569s)
+[2019.07.31-23.42.24:391][616]LogAIModule: Creating AISystem for world Presistentlevel
+[2019.07.31-23.42.24:392][616]LogPlayLevel: PIE: World Init took: (0.001417s)
+[2019.07.31-23.42.24:392][616]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Presistentlevel.Presistentlevel to /Game/UEDPIE_0_Presistentlevel.Presistentlevel (0.403793s)
+[2019.07.31-23.42.24:417][616]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2019.07.31-23.42.24:433][616]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.31-23.42.24:453][616]LogInit: FAudioDevice initialized.
+[2019.07.31-23.42.24:480][616]LogLoad: Game class is 'BP_HereAfterGameMode_C'
+[2019.07.31-23.42.24:535][616]LogWorld: Bringing World /Game/UEDPIE_0_Presistentlevel.Presistentlevel up for play (max tick rate 0) at 2019.08.01-11.42.24
+[2019.07.31-23.42.24:537][616]LogWorld: Bringing up level for play took: 0.056590
+[2019.07.31-23.42.24:553][616]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_0 1 1 1
+[2019.07.31-23.42.24:553][616]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_1 1 0 1
+[2019.07.31-23.42.24:554][616]PIE: Play in editor start time for /Game/UEDPIE_0_Presistentlevel 1.003
+[2019.07.31-23.42.24:554][616]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.24:555][616]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.24:555][616]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.26:607][694]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.26:608][694]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.26:608][694]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.26:609][694]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.42.26:677][694]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.07.31-23.42.26:677][694]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.42.26:677][694]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.42.26:678][694]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.42.26:710][694]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.42.26:735][694]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2019.07.31-23.42.26:771][695]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2019.07.31-23.42.26:797][695]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2019.07.31-23.45.36:687][930]LogHotReload: New module detected: UE4Editor-HereAfter-0012.dll
+[2019.07.31-23.45.38:048][935]LogHotReload: Starting Hot-Reload from IDE
+[2019.07.31-23.45.38:082][935]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2019.07.31-23.45.38:104][935]LogContentBrowser: Native class hierarchy updated for 'HereAfter' in 0.0007 seconds. Added 10 classes and 2 folders.
+[2019.07.31-23.45.38:107][935]Display: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2019.07.31-23.45.38:179][935]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2019.07.31-23.45.38:195][935]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2757 classes and 669 folders.
+[2019.07.31-23.45.38:199][935]Display: HotReload took  0.2s.
+[2019.07.31-23.45.52:503][977]LogHotReload: New module detected: UE4Editor-HereAfter-0013.dll
+[2019.07.31-23.45.53:536][981]LogHotReload: Starting Hot-Reload from IDE
+[2019.07.31-23.45.53:582][981]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2019.07.31-23.45.53:622][981]LogContentBrowser: Native class hierarchy updated for 'HereAfter' in 0.0006 seconds. Added 10 classes and 2 folders.
+[2019.07.31-23.45.53:626][981]Display: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2019.07.31-23.45.53:707][981]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2019.07.31-23.45.53:720][981]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2757 classes and 669 folders.
+[2019.07.31-23.45.53:724][981]Display: HotReload took  0.2s.
+[2019.07.31-23.45.55:844][987]LogTemp: Repeating last play command: Selected Viewport
+[2019.07.31-23.45.55:872][987]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.45.55:872][987]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.45.55:873][987]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.45.55:873][987]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.07.31-23.45.55:873][987]PIE: New page: PIE session: Presistentlevel (1/08/2019 11:45:55 pm)
+[2019.07.31-23.45.55:873][987]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Presistentlevel
+[2019.07.31-23.45.56:281][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.407459s)
+[2019.07.31-23.45.56:283][987]LogAIModule: Creating AISystem for world Presistentlevel
+[2019.07.31-23.45.56:284][987]LogPlayLevel: PIE: World Init took: (0.002488s)
+[2019.07.31-23.45.56:284][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Presistentlevel.Presistentlevel to /Game/UEDPIE_0_Presistentlevel.Presistentlevel (0.410788s)
+[2019.07.31-23.45.56:312][987]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2019.07.31-23.45.56:330][987]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.31-23.45.56:350][987]LogInit: FAudioDevice initialized.
+[2019.07.31-23.45.56:378][987]LogLoad: Game class is 'BP_HereAfterGameMode_C'
+[2019.07.31-23.45.56:440][987]LogWorld: Bringing World /Game/UEDPIE_0_Presistentlevel.Presistentlevel up for play (max tick rate 0) at 2019.08.01-11.45.56
+[2019.07.31-23.45.56:443][987]LogWorld: Bringing up level for play took: 0.063749
+[2019.07.31-23.45.56:459][987]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_0 1 1 1
+[2019.07.31-23.45.56:460][987]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_1 1 0 1
+[2019.07.31-23.45.56:460][987]PIE: Play in editor start time for /Game/UEDPIE_0_Presistentlevel 0.912
+[2019.07.31-23.45.56:460][987]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.45.56:460][987]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.45.56:461][987]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.47.32:883][ 90]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.47.32:883][ 90]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.47.32:883][ 90]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.47.32:884][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.47.32:950][ 90]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.07.31-23.47.32:950][ 90]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.47.32:951][ 90]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.47.32:951][ 90]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.47.32:982][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.47.33:005][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2019.07.31-23.47.33:050][ 91]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2019.07.31-23.47.33:076][ 91]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2019.07.31-23.48.04:151][596]LogHotReload: New module detected: UE4Editor-HereAfter-0014.dll
+[2019.07.31-23.48.05:189][600]LogHotReload: Starting Hot-Reload from IDE
+[2019.07.31-23.48.05:234][600]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2019.07.31-23.48.05:276][600]LogContentBrowser: Native class hierarchy updated for 'HereAfter' in 0.0010 seconds. Added 10 classes and 2 folders.
+[2019.07.31-23.48.05:281][600]Display: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2019.07.31-23.48.05:379][600]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2019.07.31-23.48.05:398][600]LogContentBrowser: Native class hierarchy populated in 0.0142 seconds. Added 2757 classes and 669 folders.
+[2019.07.31-23.48.05:403][600]Display: HotReload took  0.2s.
+[2019.07.31-23.48.12:065][620]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.07.31-23.48.12:212][620]LogTemp: Repeating last play command: Selected Viewport
+[2019.07.31-23.48.12:234][620]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.48.12:234][620]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.48.12:234][620]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.48.12:235][620]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.07.31-23.48.12:235][620]PIE: New page: PIE session: Presistentlevel (1/08/2019 11:48:12 pm)
+[2019.07.31-23.48.12:235][620]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Presistentlevel
+[2019.07.31-23.48.12:633][620]LogPlayLevel: PIE: StaticDuplicateObject took: (0.397722s)
+[2019.07.31-23.48.12:634][620]LogAIModule: Creating AISystem for world Presistentlevel
+[2019.07.31-23.48.12:634][620]LogPlayLevel: PIE: World Init took: (0.000794s)
+[2019.07.31-23.48.12:634][620]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Presistentlevel.Presistentlevel to /Game/UEDPIE_0_Presistentlevel.Presistentlevel (0.399005s)
+[2019.07.31-23.48.12:657][620]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2019.07.31-23.48.12:672][620]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.07.31-23.48.12:691][620]LogInit: FAudioDevice initialized.
+[2019.07.31-23.48.12:721][620]LogLoad: Game class is 'BP_HereAfterGameMode_C'
+[2019.07.31-23.48.12:786][620]LogWorld: Bringing World /Game/UEDPIE_0_Presistentlevel.Presistentlevel up for play (max tick rate 0) at 2019.08.01-11.48.12
+[2019.07.31-23.48.12:790][620]LogWorld: Bringing up level for play took: 0.067558
+[2019.07.31-23.48.12:806][620]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_0 1 1 1
+[2019.07.31-23.48.12:806][620]LogLevel: ActivateLevel /Game/UEDPIE_0_Level_1 1 0 1
+[2019.07.31-23.48.12:806][620]PIE: Play in editor start time for /Game/UEDPIE_0_Presistentlevel 1.261
+[2019.07.31-23.48.12:807][620]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.48.12:807][620]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.48.12:807][620]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.49.48:930][707]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.49.48:931][707]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.49.48:931][707]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.49.48:932][707]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.49.49:003][707]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.07.31-23.49.49:003][707]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Presistentlevel.Presistentlevel:PersistentLevel' has LevelScriptBlueprint '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel' with GeneratedClass '/Game/Presistentlevel.Presistentlevel_C' with ClassGeneratedBy '/Game/Presistentlevel.Presistentlevel:PersistentLevel.Presistentlevel'
+[2019.07.31-23.49.49:004][707]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Level_0.Level_0_C' with ClassGeneratedBy '/Game/Level_0.Level_0:PersistentLevel.Level_0'
+[2019.07.31-23.49.49:004][707]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Level_1.Level_1:PersistentLevel' has LevelScriptBlueprint '/Game/Level_1.Level_1:PersistentLevel.Level_1' with GeneratedClass '/Game/Level_1.Level_1_C' with ClassGeneratedBy '/Game/Level_1.Level_1:PersistentLevel.Level_1'
+[2019.07.31-23.49.49:037][707]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.07.31-23.49.49:065][707]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
+[2019.07.31-23.49.49:115][708]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2019.07.31-23.49.49:138][708]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2019.07.31-23.50.11:696][583]LogSlate: FSceneViewport::OnFocusLost() reason 0
