@@ -1,13 +1,38 @@
-<<<<<<< HEAD
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\mark.wil7543\Documents\GitKraken\HereAfter).
-  Creating makefile for HereAfterEditor (ini files are newer than makefile)
+﻿  Cleaning HereAfterEditor and UnrealHeaderTool binaries...
+UnrealBuildTool : error : Unable to delete D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Binaries\Win64\UE4Editor-HereAfter.dll (Access to the path 'D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Binaries\Win64\UE4Editor-HereAfter.dll' is denied.)
+  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\mark.wil7543\Documents\GitKraken\HereAfter).
+  Creating makefile for HereAfterEditor (no existing makefile)
   Parsing headers for HereAfterEditor
     Running UnrealHeaderTool "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for HereAfterEditor in 6.8158081 seconds
-  Target is up to date
-  Total execution time: 8.96 seconds
-=======
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\steven.zha7447\Documents\HereAfter).
-  Creating makefile for HereAfterEditor (ini files are newer than makefile)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): warning MSB5021: Terminating the task executable "cmd" and its child processes because the build was canceled.
->>>>>>> develop
+  Reflection code generated for HereAfterEditor in 6.8120751 seconds
+  Using Visual Studio 2019 14.21.27702 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 27 actions with 8 processes...
+    [1/27] Default.rc2
+    [2/27] SharedPCH.Engine.cpp
+    [3/27] HereAfter.cpp
+    [4/27] Dialogue.cpp
+    [5/27] Interactable.cpp
+    [6/27] DialogueManager.cpp
+    [7/27] HereAfterProjectile.cpp
+    [8/27] HereAfterGameMode.cpp
+    [9/27] Quest.cpp
+    [10/27] MyGameManager.cpp
+    [11/27] HereAfter.init.gen.cpp
+    [12/27] Dialogue.gen.cpp
+    [13/27] HereAfterHUD.cpp
+    [14/27] HereAfterCharacter.gen.cpp
+    [15/27] HereAfterGameMode.gen.cpp
+    [16/27] HereAfterProjectile.gen.cpp
+    [17/27] HereAfterHUD.gen.cpp
+    [18/27] Interactable.gen.cpp
+    [19/27] MyGameManager.gen.cpp
+    [20/27] Quest.gen.cpp
+    [21/27] HereAfterCharacter.cpp
+    [22/27] DialogueManager.gen.cpp
+    [23/27] QuestManager.gen.cpp
+    [24/27] QuestManager.cpp
+    [25/27] UE4Editor-HereAfter-0001.dll
+LINK : fatal error LNK1104: cannot open file 'D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Binaries\Win64\UE4Editor-HereAfter-0001.dll'
+    [26/27] UE4Editor-HereAfter-0001.lib
+       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0001.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0001.exp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(49,5): error MSB3073: The command "D:\Users\mark.wil7543\Documents\UE_4.22\Engine\Build\BatchFiles\Rebuild.bat HereAfterEditor Win64 Development -Project="D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" -WaitMutex -FromMsBuild" exited with code -1.
