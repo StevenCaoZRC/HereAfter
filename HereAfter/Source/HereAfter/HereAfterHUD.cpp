@@ -139,7 +139,7 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("While sometimes creating ones of its own.", true, true); //19
 	DialogueMan->AddDialogue("", true, false);//20
 	DialogueMan->AddDialogue("Our fate is in your hands. Only you can stop this.", true, true); //21
-	DialogueMan->AddDialogue("Thank you, Traveller.", false, true);//22
+	DialogueMan->AddDialogue("Thank you, Traveller.", true, true);//22
 	//Well Water
 	DialogueMan->AddDialogue("Sees no light, makes no sound.", true, true); //23
 	DialogueMan->AddDialogue("A river courses deep underground.", true, true); //24
