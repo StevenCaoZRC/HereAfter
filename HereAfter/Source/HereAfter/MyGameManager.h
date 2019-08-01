@@ -20,7 +20,7 @@ public:
 		AQuestManager* QuestMan;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	class USoundBase* AmbienceSound;
+	class UAudioComponent* AmbienceSound;
 
 	AHereAfterCharacter* Character;
 protected:

@@ -40,9 +40,20 @@ void AHereAfterHUD::DisplayDialogue(int _dID, FVector2D _pos)
 
 		if (bPlaySound)
 		{
-			if (Voices1 != NULL)
+			if (Voices1 != NULL && Voices2!=NULL)
 			{
-				UGameplayStatics::SpawnSoundAtLocation(Character, Voices1, Character->GetActorLocation());
+				int temp = FMath::RandRange(1, 2);
+
+				if (temp == 1)
+				{
+					UGameplayStatics::SpawnSoundAtLocation(Character, Voices1, Character->GetActorLocation());
+				}
+				else
+				{
+					UGameplayStatics::SpawnSoundAtLocation(Character, Voices2, Character->GetActorLocation());
+				}
+
+				
 			}
 			bPlaySound = false;
 		}
@@ -194,7 +205,7 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("Biding my time...", true, true); //77
 	DialogueMan->AddDialogue("Waiting to bloom...", true, true); //78
 	DialogueMan->AddDialogue("Waiting…", true, true); //79
-	DialogueMan->AddDialogue("for you.", true, true); //80
+	DialogueMan->AddDialogue("For you.", true, true); //80
 	DialogueMan->AddDialogue("", true, true);//81
 	DialogueMan->AddDialogue("The precious talisman I hid in that casket…", true, true); //82
 	DialogueMan->AddDialogue("Please open it.", false, true); //83

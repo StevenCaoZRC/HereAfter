@@ -14,8 +14,7 @@ AMyGameManager::AMyGameManager()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<USoundBase> Ambience(TEXT("/Game/FirstPerson/Audio/Ambience"));
-	AmbienceSound = Ambience.Object;
+
 }
 
 // Called when the game starts or when spawned
@@ -28,10 +27,6 @@ void AMyGameManager::BeginPlay()
 	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
 	Character = Cast<AHereAfterCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
-	if (AmbienceSound != NULL)
-	{
-		UGameplayStatics::PlaySoundAtLocation(Character, AmbienceSound, Character->GetActorLocation());
-	}
 	
 	QuestMan->AddQuest("WaterQuest", "Collect a vial of well water", false, false, false);
 	QuestMan->AddQuest("PlantQuest", "Retrieve a Mandragora", false, false, false);
