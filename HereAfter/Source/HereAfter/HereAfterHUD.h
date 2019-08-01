@@ -22,6 +22,7 @@ public:
 	virtual void DrawHUD() override;
 	virtual void BeginPlay() override;
 	void DisplayDialogue(int _dID, FVector2D _pos);
+	UFUNCTION(BlueprintCallable, Category = "Dialogue")
 	void Init();
 	void ResetDisDialogue();
 	UFUNCTION(BlueprintCallable, Category = "Dialogue")
