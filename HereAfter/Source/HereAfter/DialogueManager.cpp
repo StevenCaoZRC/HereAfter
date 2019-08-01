@@ -32,10 +32,10 @@ TArray<ADialogue*> ADialogueManager::GetDialogues()
 	return Dialogues;
 }
 
-void ADialogueManager::AddDialogue(FString _Dialogue, bool _bContinue)
+void ADialogueManager::AddDialogue(FString _Dialogue, bool _bContinue, bool _bTalking)
 {
 	ADialogue* Temp = GetWorld()->SpawnActor<ADialogue>(ADialogue::StaticClass());
-	Temp->Init(_Dialogue, _bContinue);
+	Temp->Init(_Dialogue, _bContinue, _bTalking);
 
 	Dialogues.Push(Temp);
 }

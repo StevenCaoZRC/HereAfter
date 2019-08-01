@@ -1,6 +1,7 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "HereAfterCharacter.h"
+#include "UObject/ConstructorHelpers.h"
 #include "HereAfterProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
@@ -22,6 +23,7 @@ DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
 AHereAfterCharacter::AHereAfterCharacter()
 {
+	
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
@@ -92,6 +94,7 @@ void AHereAfterCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+	
 	
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor

@@ -3,6 +3,8 @@
 #pragma once 
 
 #include "CoreMinimal.h"
+#include "Kismet/GameplayStatics.h"
+#include "HereAfterCharacter.h"
 #include "DialogueManager.h"
 #include "Engine/Engine.h"
 #include "GameFramework/HUD.h"
@@ -30,10 +32,14 @@ private:
 	class UTexture2D* CrosshairTex;
 	ADialogueManager* DialogueMan;
 	bool bDisplayDialogue = false;
+	bool bPlaySound = true;
 	int iDialogueID = 0;
-	float fRemainingTime = 5.0f;
+	float fRemainingTime = 6.6f;
 	UFont* uFont;
 	float fTextW;
 	float fTextH;
+	USoundBase* Voices1;
+	USoundBase* Voices2;
+	AHereAfterCharacter* Character;
 };
 

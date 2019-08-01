@@ -2,14 +2,14 @@
   Creating makefile for HereAfterEditor (ini files are newer than makefile)
   Parsing headers for HereAfterEditor
     Running UnrealHeaderTool "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for HereAfterEditor in 7.1523164 seconds
+  Reflection code generated for HereAfterEditor in 7.1744618 seconds
   Using Visual Studio 2019 14.21.27702 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 8 processes...
     [1/4] HereAfterHUD.cpp
-    [2/4] UE4Editor-HereAfter-0014.lib
-       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0014.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0014.exp
-    [3/4] UE4Editor-HereAfter-0014.dll
-       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0014.suppressed.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0014.suppressed.exp
+    [2/4] UE4Editor-HereAfter-0003.lib
+       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0003.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0003.exp
+    [3/4] UE4Editor-HereAfter-0003.dll
+       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0003.suppressed.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0003.suppressed.exp
     [4/4] HereAfterEditor.target
-  Total time in Parallel executor: 3.42 seconds
-  Total execution time: 13.04 seconds
+  Total time in Parallel executor: 4.15 seconds
+  Total execution time: 13.75 seconds

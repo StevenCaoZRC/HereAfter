@@ -25,10 +25,11 @@ void ADialogue::Tick(float DeltaTime)
 
 }
 
-void ADialogue::Init(FString _dialogue, bool _bContinue)
+void ADialogue::Init(FString _dialogue, bool _bContinue, bool _bTalking)
 {
 	SetDialogue(_dialogue);
 	bContinue = _bContinue;
+	bTalking = _bTalking;
 }
 
 FString ADialogue::GetDialogue()
@@ -46,3 +47,7 @@ bool ADialogue::GetContinue()
 	return bContinue;
 }
 
+bool ADialogue::GetTalking()
+{
+	return bTalking;
+}

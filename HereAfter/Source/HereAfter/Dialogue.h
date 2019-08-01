@@ -15,13 +15,15 @@ public:
 	// Sets default values for this actor's properties
 	ADialogue();
 	UFUNCTION()
-	void Init(FString _dialogue, bool bContinue);
+	void Init(FString _dialogue, bool _bContinue, bool _bTalking);
 	UFUNCTION()
 	FString GetDialogue();
 	UFUNCTION()
 	void SetDialogue(FString _dialogue);
 	UFUNCTION()
 	bool GetContinue();
+	UFUNCTION()
+	bool GetTalking();
 
 protected:
 	// Called when the game starts or when spawned
@@ -35,5 +37,7 @@ private:
 		FString Dialogue;
 	UPROPERTY()
 		bool bContinue = false;
+	UPROPERTY()
+		bool bTalking;
 
 };

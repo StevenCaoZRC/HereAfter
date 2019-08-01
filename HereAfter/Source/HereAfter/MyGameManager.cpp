@@ -2,8 +2,11 @@
 
 
 #include "MyGameManager.h"
+#include "HereAfterCharacter.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMyGameManager::AMyGameManager()
@@ -11,10 +14,8 @@ AMyGameManager::AMyGameManager()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-
-
-	
-	
+	static ConstructorHelpers::FObjectFinder<USoundBase> Ambience(TEXT("/Game/FirstPerson/Audio/Ambience"));
+	AmbienceSound = Ambience.Object;
 }
 
 // Called when the game starts or when spawned
@@ -22,9 +23,15 @@ void AMyGameManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
 	
 
+	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
+	Character = Cast<AHereAfterCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+	if (AmbienceSound != NULL)
+	{
+		UGameplayStatics::PlaySoundAtLocation(Character, AmbienceSound, Character->GetActorLocation());
+	}
 	
 	QuestMan->AddQuest("WaterQuest", "Collect a vial of well water", false, false, false);
 	QuestMan->AddQuest("PlantQuest", "Retrieve a Mandragora", false, false, false);
@@ -37,6 +44,9 @@ void AMyGameManager::BeginPlay()
 	QuestMan->AddQuest("Get Box", "Traverse the woods to find the box", false, false, false);
 	QuestMan->AddQuest("Get Shyamalaned", "Traverse the woods to find the twist", false, false, false);*/
 	QuestMan->SetCurrentQuest(0);
+
+
+	
 
 	
 	for (int i = 0; i < QuestMan->GetQuests().Num(); i++)
@@ -51,6 +61,8 @@ void AMyGameManager::BeginPlay()
 void AMyGameManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	
 
 }
 

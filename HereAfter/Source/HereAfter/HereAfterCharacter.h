@@ -106,6 +106,9 @@ public:
 
 	UPROPERTY( BlueprintReadOnly, Category = "LevelStreaming")
 		ULevelStreaming* FutureLevel;
+
+
+
 protected:
 	
 	/** Fires a projectile. */
