@@ -107,6 +107,8 @@ public:
 	UPROPERTY( BlueprintReadOnly, Category = "LevelStreaming")
 		ULevelStreaming* FutureLevel;
 
+	UPROPERTY(BlueprintReadOnly, Category = "LevelStreaming")
+		class AMyGameManager* GameMan;
 
 
 protected:

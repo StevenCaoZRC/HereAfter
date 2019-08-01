@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 	HEREAFTER_API UClass* Z_Construct_UClass_AHereAfterCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_HereAfter();
+	HEREAFTER_API UClass* Z_Construct_UClass_AMyGameManager_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ULevelStreaming_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
@@ -37,6 +38,10 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameMan_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameMan;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FutureLevel_MetaData[];
 #endif
@@ -114,6 +119,13 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		{ "ModuleRelativePath", "HereAfterCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GameMan_MetaData[] = {
+		{ "Category", "LevelStreaming" },
+		{ "ModuleRelativePath", "HereAfterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GameMan = { "GameMan", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, GameMan), Z_Construct_UClass_AMyGameManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GameMan_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GameMan_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel_MetaData[] = {
 		{ "Category", "LevelStreaming" },
@@ -236,6 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHereAfterCharacter, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_BaseTurnRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHereAfterCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_GameMan,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_PresentLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHereAfterCharacter_Statics::NewProp_FutureLevelName,
@@ -279,7 +292,7 @@ void EmptyLinkFunctionForGeneratedCodeHereAfterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHereAfterCharacter, 1738460546);
+	IMPLEMENT_CLASS(AHereAfterCharacter, 2664012663);
 	template<> HEREAFTER_API UClass* StaticClass<AHereAfterCharacter>()
 	{
 		return AHereAfterCharacter::StaticClass();

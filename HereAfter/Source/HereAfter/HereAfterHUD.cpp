@@ -19,6 +19,7 @@ AHereAfterHUD::AHereAfterHUD()
 	Voices1 = Whis1.Object;
 	static ConstructorHelpers::FObjectFinder<USoundBase> Whis2(TEXT("/Game/FirstPerson/Audio/Whispering2"));
 	Voices2 = Whis2.Object;
+	
 }
 
 void AHereAfterHUD::BeginPlay()
@@ -26,8 +27,6 @@ void AHereAfterHUD::BeginPlay()
 	Super::BeginPlay();
 	Character = Cast<AHereAfterCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 	Init();
-	
-	SetDialogue(56);
 }
 
 void AHereAfterHUD::DisplayDialogue(int _dID, FVector2D _pos)
@@ -122,8 +121,8 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("Please, come closer. I wish to show you something.", true, true); //1
 	DialogueMan->AddDialogue("", true, false);//2
 	DialogueMan->AddDialogue("I am the guardian of this forest. It has been my home for many years", true, true); //3
-	DialogueMan->AddDialogue("My roots run deep here, caring for all creatures that inhabit this place.", false, true); //4
-	DialogueMan->AddDialogue("Press 'Q' to Time Jump", false, false);//5
+	DialogueMan->AddDialogue("My roots run deep here, caring for all creatures that inhabit this place.", true, true); //4
+	DialogueMan->AddDialogue("Press 'Q' to Time Jump", true, false);//5
 	DialogueMan->AddDialogue("But we are under threat. This is a vision of the future - our future.", true, true); //6
 	DialogueMan->AddDialogue("This beautiful place will become nothing but ash if we do not stop it.", true, true); //7
 	DialogueMan->AddDialogue("All the beauty, all the life will be gone.", true, true); //8
@@ -140,7 +139,7 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("While sometimes creating ones of its own.", true, true); //19
 	DialogueMan->AddDialogue("", true, false);//20
 	DialogueMan->AddDialogue("Our fate is in your hands. Only you can stop this.", true, true); //21
-	DialogueMan->AddDialogue("Thank you, Traveller.", false, true);//22
+	DialogueMan->AddDialogue("Thank you, Traveller.", true, true);//22
 	//Well Water
 	DialogueMan->AddDialogue("Sees no light, makes no sound.", true, true); //23
 	DialogueMan->AddDialogue("A river courses deep underground.", true, true); //24
@@ -245,7 +244,6 @@ void AHereAfterHUD::Init()
 	DialogueMan->AddDialogue("The future is mine!", false, true);//113
 	//The empty string, do DO do do
 	DialogueMan->AddDialogue("", false, false);//114
-
 }
 
 void AHereAfterHUD::DrawHUD()
