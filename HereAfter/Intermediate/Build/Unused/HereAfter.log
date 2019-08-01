@@ -1,3 +1,18 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\steven.zha7447\Documents\HereAfter).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\mark.wil7543\Documents\GitKraken\HereAfter).
   Creating makefile for HereAfterEditor (ini files are newer than makefile)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): warning MSB5021: Terminating the task executable "cmd" and its child processes because the build was canceled.
+  Parsing headers for HereAfterEditor
+    Running UnrealHeaderTool "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\HereAfter.uproject" "D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\HereAfterEditor\Development\HereAfterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for HereAfterEditor in 7.1413434 seconds
+  Using Visual Studio 2019 14.21.27702 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 7 actions with 8 processes...
+    [1/7] HereAfterHUD.cpp
+    [2/7] HereAfter.init.gen.cpp
+    [3/7] MyGameManager.gen.cpp
+    [4/7] MyGameManager.cpp
+    [5/7] UE4Editor-HereAfter-0005.lib
+       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0005.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0005.exp
+    [6/7] UE4Editor-HereAfter-0005.dll
+       Creating library D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0005.suppressed.lib and object D:\Users\mark.wil7543\Documents\GitKraken\HereAfter\HereAfter\Intermediate\Build\Win64\UE4Editor\Development\HereAfter\UE4Editor-HereAfter-0005.suppressed.exp
+    [7/7] HereAfterEditor.target
+  Total time in Parallel executor: 9.15 seconds
+  Total execution time: 18.85 seconds

@@ -2,8 +2,11 @@
 
 
 #include "MyGameManager.h"
+#include "HereAfterCharacter.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMyGameManager::AMyGameManager()
@@ -12,9 +15,6 @@ AMyGameManager::AMyGameManager()
 	PrimaryActorTick.bCanEverTick = true;
 
 
-
-	
-	
 }
 
 // Called when the game starts or when spawned
@@ -22,8 +22,10 @@ void AMyGameManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
 	
+
+	QuestMan = GetWorld()->SpawnActor<AQuestManager>(AQuestManager::StaticClass());
+	Character = Cast<AHereAfterCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
 	
 	QuestMan->AddQuest("WaterQuest", "Collect a vial of well water", false, false, false);
@@ -38,6 +40,9 @@ void AMyGameManager::BeginPlay()
 	QuestMan->AddQuest("Get Shyamalaned", "Traverse the woods to find the twist", false, false, false);*/
 	QuestMan->SetCurrentQuest(0);
 
+
+	
+
 	
 	for (int i = 0; i < QuestMan->GetQuests().Num(); i++)
 	{
@@ -51,6 +56,8 @@ void AMyGameManager::BeginPlay()
 void AMyGameManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	
 
 }
 

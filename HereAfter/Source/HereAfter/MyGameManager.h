@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "HereAfterCharacter.h"
 #include "QuestManager.h"
 #include "GameFramework/Actor.h"
 #include "MyGameManager.generated.h"
@@ -17,6 +18,11 @@ public:
 	AMyGameManager();
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category = "QuestManager")
 		AQuestManager* QuestMan;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	class UAudioComponent* AmbienceSound;
+
+	AHereAfterCharacter* Character;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
